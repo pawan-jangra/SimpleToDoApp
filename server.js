@@ -5,7 +5,7 @@ const { urlencoded } = require("body-parser")
 let app = express()
 
 let db
-let connectionString = 'mongodb+srv://muser:Gp8UPyjydrQxXUEJ@mongocluster.hkhqu.mongodb.net/jsdb?retryWrites=true&w=majority'
+let connectionString = ''
 mongodb.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: true}, function(err, client){
     db = client.db()
     app.listen(3000)
